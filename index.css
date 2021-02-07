@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #282c34;
+    color: white;
+    height: 100vh;
+    min-width: 849px;
+    min-height: 849px;
+    overflow-x: hidden;
+}
+
+#header {
+    text-align: center;
+    height: 25%;
+}
+
+#title {
+    padding: 1cm;
+    font-size: 50pt;
+}
+
+#title #part {
+    background-color: red;
+    font-style: italic;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#subtitle {
+    font-size: 25pt;
+    padding: 0 0.5cm;
+}
+
+#icon {
+    height: 3cm;
+    position: absolute;
+    top: 1cm;
+    right: 2cm;
+
+    padding: 5px;
+    border: 2.5px dotted gray;
+    border-radius: 3cm;
+}
+
+#content {
+    height: 75%;
+    text-align: center;
+}
+
+#settings {
+    display: inline-block;
+    padding: 0.75cm 1cm;
+}
+
+#settings p {
+    font-size: 20pt;
+    margin: 0 0 20px 0;
+}
+
+#settings p input[type="number"] {
+    width: 2cm;
+    font-size: inherit;
+}
+
+#settings p input[type="checkbox"] {
+    height: 15pt;
+    width: 15pt;
+    vertical-align: middle;
+}
+
+#settings input[type="button"] {
+    padding: 3px 5px;
+    font-size: 25pt;
+
+    background-color: #282c34;
+    color: white;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#settings input[type="button"]:hover {
+    transform: scale(1.1);
+}
+
+#container {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0.5cm 15%;
+    align-content: space-between;
+}
+
+.item {
+    flex-grow: 1;
+    padding: 0.5cm;
+    margin: 0.5cm 0.5cm;
+    text-align: left;
+}
+
+.border {
+    border: 4px dashed white;
+    border-radius: 10px;
+}
+
+.group-names {
+    font-family: 'Roboto Mono', monospace;
+    white-space: pre;
+    list-style: none;
+}
+
+@media screen and (max-width: 1099px) {
+    #header {
+        text-align: left;
+    }
+
+    #icon {
+        height: 3cm;
+        right: initial;
+        left: 700px;
+    }
+
+    #container {
+        margin: 0.5cm 5%;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    body {
+        height: 98vh;
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-height: 849px) {
+    body {
+        width: 98vw;
+        overflow-y: auto;
+    }
+}

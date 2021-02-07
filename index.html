@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>TeamWork 2.3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div id="header">
+            <h1 id="title"><span id="part">Team </span>Work</h1>
+            <p id="subtitle">Zufallsgenerator zur Gruppenbestimmung</p>
+            <img id="icon" src="img/icon.png" alt="Icon">
+        </div>
+
+        <div id="content">
+            <div id="settings" class="border">
+                <p>Mindestgruppengröße: <input type="number" onchange="input(this)"></p>
+                <p>Inklusive Austauschschüler: <input type="checkbox" onchange="check(this.checked)"></p>
+                <input type="button" value="Los!" onclick="start()">
+            </div>
+            <div id="container">
+            </div>
+        </div>
+    </body>
+
+</html>
